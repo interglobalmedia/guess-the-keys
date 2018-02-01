@@ -1,0 +1,84 @@
+$max-800: '(max-width: 800px)';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cutive Mono', monospace;
+}
+
+.keyboard {
+    background: #ffc600;
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    border: 1px solid rebeccapurple;
+    display: block;
+    padding: 20px 40px 40px;
+    h1,
+    p {
+        text-align: center;
+        color: rebeccapurple;
+        margin: 20px auto;
+    }
+    @media #{$max-800} {
+        display: block;
+        width: 90%;
+    }
+}
+
+p {
+    line-height: 1.2;
+    font-size: 1.2rem;
+}
+
+input {
+    max-width: 150px;
+    height: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+button,
+#reset {
+    margin: 20px auto 0;
+    padding: 5px 7px;
+    display: block;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.site-footer {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #663399;
+}
+
+// Sticky Footer Styling
+:root {
+    --space: 1.5em 0;
+    --space: 2em 0;
+}
+
+.Site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.Site-content {
+    flex: 1 0 auto;
+    padding: var(--space) var(--space) 0;
+    width: 100%;
+}
+
+.Site-content:after {
+    content: '\00a0';
+    display: block;
+    margin-top: var(--space);
+    height: 0;
+    visibility: hidden;
+}
