@@ -116,7 +116,7 @@ document.addEventListener('keypress', (e) => {
     }
 })
 
-input.addEventListener('change', (e) => {
+input.addEventListener('change', () => {
     if (input.value !== 'maria') {
         heading2.innerText = 'You guessed incorrectly. Try again!';
         chordPad.innerText = 'Wrong Input. Try again!';
