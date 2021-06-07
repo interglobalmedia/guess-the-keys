@@ -1,0 +1,26 @@
+{
+  "name": "guess-the-keys",
+  "version": "1.0.0",
+  "description": "## A fun little game made with JavaScript, SCSS/CSS3, and HTML.",
+  "main": "keypress.js",
+  "scripts": {
+    "scss": "node-sass --watch styles/scss -o styles/css",
+    "clean": "rm -rf dist/ && mkdir dist",
+    "build": "cp -R scripts styles dist/ cp favicon.ico index.html dist/",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/interglobalmedia/guess-the-keys.git"
+  },
+  "author": "Maria D. Campbell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/interglobalmedia/guess-the-keys/issues"
+  },
+  "homepage": "https://github.com/interglobalmedia/guess-the-keys#readme",
+  "dependencies": {
+    "gh-pages": "^3.2.0",
+    "node-sass": "^6.0.0"
+  }
+}
