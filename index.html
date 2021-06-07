@@ -25,7 +25,15 @@
         </div>
     </div>
     <footer class="site-footer">
-        <p>&#10013; © 2018 Maria D. Campbell &#10013;</p>
+        <script>
+            const theDate = new Date();
+            const footer = document.querySelector(".site-footer");
+            footer.style.fontWeight = "400";
+            footer.style.letterSpacing = "0.07rem";
+            footer.style.fontFamily = "Share Tech Mono, monospace";
+            footer.innerHTML =
+                `&#10013; © ${theDate.getFullYear()} Maria D. Campbell &#10013;`;
+        </script>
     </footer>
     <script src="scripts/js/keypress.js "></script>
 </body>
