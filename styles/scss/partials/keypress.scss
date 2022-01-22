@@ -89,7 +89,7 @@ input {
     }
 }
 
-button {
+button.form-button {
     display: none;
     @media #{$min-412} {
         background: $btnBgColor;
@@ -106,6 +106,7 @@ button {
 }
 
 button:after {
+    display: none;
     @media #{$min-412} {
         background: $btnBgAfterColor;
         border-radius: 50%;
@@ -121,6 +122,7 @@ button:after {
 }
 
 button:before {
+    display: none;
     @media #{$min-412} {
         background: $btnBgBeforeColor;
         border-radius: 50%;
@@ -140,6 +142,7 @@ button:before {
 }
 
 .active button {
+    display: none;
     @media #{$min-412} {
         margin-left: -1rem;
         transform: translateX(260px);
@@ -147,6 +150,7 @@ button:before {
 }
 
 .active button:before {
+    display: none;
     @media #{$min-412} {
         transform: scale(1);
     }
