@@ -1,49 +1,17 @@
-/* keyboard related global variables */
+/* set styles for the chordPad div containing keypress result related messages */
+import './styles/scss/styles.scss';
+import initStyles from './modules/initStyles';
+import chordPadStyles from './modules/chordPadStyles';
+import Div from './modules/Div';
+import getRandomColor from './modules/getRandomColor';
+import createCharDivs from './modules/createCharDivs';
+
 const chordPad = document.querySelector('#keyboard');
 const key = document.querySelector('.key');
 const keyInput = document.querySelector('#secret');
 
-window.onload = initStyles();
-
-/* Set default styles on for div with .keyboard class on load */
-function initStyles() {
-    const body = document.querySelector('body');
-    const heading2 = document.querySelector('h2');
-
-    heading2.style.margin = '0 auto';
-    heading2.style.textAlign = 'center';
-    heading2.style.display = 'block';
-    heading2.style.color = 'rebeccapurple';
-
-    keyInput.style.display = 'block';
-    keyInput.style.backgroundColor = `rgba(254, 111, 117, 1)`;
-    keyInput.style.margin = '20px auto';
-
-    body.style.backgroundColor = `#fdf6e3`;
-}
-
-/* set styles for the chordPad div containing keypress result related messages */
-function chordPadStyles() {
-    chordPad.style.color = getRandomColor();
-    chordPad.style.backgroundColor = getRandomColor();
-    chordPad.style.border = '2px dashed';
-    chordPad.style.borderColor = getRandomColor();
-    chordPad.style.padding = '10px';
-    chordPad.style.margin = '0 auto';
-    chordPad.style.fontSize = '20px';
-    chordPad.style.display = 'block';
-    chordPad.style.textAlign = 'center';
-}
-
-/* function to create random colors for background and border of #keyboard */
-function getRandomColor() {
-    const chars = '0123456789ABCDEF'.split('');
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-        color += chars[Math.round(Math.random() * 15)];
-    }
-    return color;
-}
+const loadStyles = initStyles();
+const charDivs = createCharDivs();
 
 /* reset div with .keyboard class to its initial state */
 document.addEventListener('keydown', function (e) {
@@ -130,49 +98,6 @@ keyInput.addEventListener('change', () => {
         chordPad.style.color = getRandomColor();
     }
 })
-
-/* background related code */
-/* sets the unicode values range to select from as part of the document (body) background */
-function range(from, to) {
-    return ~~(Math.random() * (to - from + 1) + from);
-}
-
-/* transforms the randomly generated unicode values from the range function into actual characters and returns a string representing the unicode characters. */
-function getChar() {
-    // 2300 - 23
-    return String.fromCharCode(range(2300, 23));
-}
-
-/* sets a range of colors inside an array with the help of teh JS arguments object, the value inside of [] being the values representing the range of degrees passed to the function inside the Div Class constructor() method below. */
-function pickColor() {
-    return arguments[range(0, arguments.length - 1)];
-}
-
-/* creates a div for each unicode character set used to create the background design of the application and sets  the custom css properties named --deg, --colorbg, and colortx to these divs. These properties are used in the external CSS towards the background linear-gradient created and set on each div. */
-class Div {
-    constructor() {
-        this.element = document.createElement('div')
-        this.element.setAttribute('class', 'char-div')
-        this.element.textContent = getChar();
-        this.element.style.setProperty('--deg', range(75, 230) + 'deg');
-        let color = pickColor(getRandomColor());
-        this.element.style.setProperty('--colorbg', color);
-        this.element.style.setProperty('--ciolortx', color)
-    }
-}
-
-/* creates an empty documentFragment into which the newly created divs generated from new instances of the Div class can be appended. And then that documentFragment is appended to the actual DOM body element. */
-function createCharDivs() {
-    let root = document.createDocumentFragment();
-    const body = document.querySelector('body');
-    for (let i = 0; i < 511; i++) {
-        let div = new Div();
-        root.appendChild(div.element);
-    }
-    body.appendChild(root);
-}
-
-createCharDivs();
 
 // animated input related code
 const animatedButton = document.querySelector('.form-button');
