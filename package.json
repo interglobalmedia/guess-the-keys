@@ -4,9 +4,10 @@
   "description": "## A fun little game made with JavaScript, SCSS/CSS3, and HTML.",
   "main": "keypress.js",
   "scripts": {
-    "scss": "node-sass --watch styles/scss -o styles/css",
-    "clean": "rm -rf dist/ && mkdir dist",
-    "build": "cp -R scripts styles dist/ && cp favicon.ico index.html dist/",
+    "scss": "node-sass --watch styles/scss -o styles/",
+    "clean": "rm -rf dist/ && mkdir -p dist/styles/",
+    "cleanSCSS": "rm -rf dist/styles/scss/",
+    "build": "cp -R scripts dist/ && cp -R styles/ dist/styles/ && cp favicon.ico index.html dist/",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
