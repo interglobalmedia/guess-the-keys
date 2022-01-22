@@ -102,10 +102,10 @@ input {
     padding-left: 25px;
     width: 100%; } }
 
-button.form-button {
+button {
   display: none; }
   @media (min-width: 412px) {
-    button.form-button {
+    button {
       background: white;
       border: none;
       border-radius: 50%;
@@ -124,6 +124,7 @@ button:after {
       background: #fe6f75;
       border-radius: 50%;
       content: ' ';
+      display: block;
       height: 32px;
       left: 0;
       margin: 0 auto;
@@ -139,7 +140,7 @@ button:before {
       background: #fff;
       border-radius: 50%;
       content: ' ';
-      width: 24px;
+      display: block;
       height: 24px;
       left: 0;
       margin: 0 auto;
@@ -149,12 +150,14 @@ button:before {
       transform: scale(0);
       transform-origin: left top;
       transition: all 0.8s ease;
+      width: 24px;
       z-index: 1; } }
 
 .active button {
   display: none; }
   @media (min-width: 412px) {
     .active button {
+      display: block;
       margin-left: -1rem;
       transform: translateX(260px); } }
 
@@ -162,6 +165,7 @@ button:before {
   display: none; }
   @media (min-width: 412px) {
     .active button:before {
+      display: block;
       transform: scale(1); } }
 
 @media (min-width: 412px) {
