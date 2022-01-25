@@ -8,7 +8,7 @@
 body {
     background: #e4ddd3;
     display: grid;
-    font-family: 'Quicksand', sans-serif;
+    font-family: Quicksand, sans-serif;
     font-weight: 600;
     grid-auto-flow: row;
     grid-auto-rows: 75px;
@@ -21,7 +21,7 @@ body {
 
 .site-footer {
     font-size: 1.2rem;
-    color: #663399;
+    color: $-keyboard-color;
     text-align: center;
 }
 
