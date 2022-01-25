@@ -6,7 +6,6 @@ const { merge } = require('webpack-merge')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const WorkboxPlugin = require('workbox-webpack-plugin')
 
 module.exports = env => {
     const {
@@ -81,9 +80,6 @@ module.exports = env => {
                 patterns: [
                     { from: 'src/static', to: '../dist' }
                 ]
-            }),
-            new WorkboxPlugin.GenerateSW({
-                swDest: 'sw.js'
             }),
             new webpack.DefinePlugin({
                 'process.env.VERSION': JSON.stringify(env.VERSION),
