@@ -1,3 +1,4 @@
+/* stylelint-disable no-duplicate-selectors */
 .char-div {
   --scaley: 2;
   --scalex: 2;
@@ -7,13 +8,17 @@
   --colorbg:#FA4659;
   --colortx:#FA4659;
     --deg: 40deg;
+
     font-size: 75px; 
     background: linear-gradient(
       var(--deg),
       transparent 50%, var(--colorbg) 50%
     );
-    background-clip: text;
+
+    /* needed for Chrome and Safari */
+    /* stylelint-disable property-no-vendor-prefix */
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: var(--colortx);
     -webkit-text-stroke-width: 2px;
