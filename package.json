@@ -5,15 +5,18 @@
   "main": "keypress.js",
   "scripts": {
     "lint": "eslint .",
-    "stylelint": "stylelint **/*.{css,scss}",
-    "stylelint:fix": "stylelint --fix **/*.{css,scss}",
+    "stylelint": "stylelint **/*.scss",
+    "stylelint:fix": "stylelint --fix **/*.scss",
     "eslint:fix": "eslint . --fix",
     "eslint-check": "eslint --print-config . | eslint-config-prettier-check",
+    "format": "npm run prettier -- --write",
+		"prepare": "husky install",
+		"prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
+		"validate": "npm run lint && npm run stylelint && npm run prettier",
     "clean": "rm -rf dist/",
     "serve": "webpack-dev-server --mode development --config config/webpack.base.config.js --open --hot --history-api-fallback --node-env development --node-env stag",
     "predeploy": "webpack --mode production --config config/webpack.prod.config.js --env PLATFORM=production --env VERSION=stag --progress",
-    "deploy": "gh-pages -d dist",
-    "prepare": "husky install"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
