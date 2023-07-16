@@ -28,7 +28,7 @@ body {
 }
 
 .keyboard {
-  background: rgba(243, 207, 162, 0.8);
+  background: rgba(243, 207, 162, 80%);
   border: 1px solid #639;
   display: flex;
   align-items: center;
@@ -44,6 +44,7 @@ body {
   transform: translateX(-50%);
   z-index: 1000;
 }
+
 .keyboard h1,
 .keyboard h2,
 .keyboard p {
@@ -215,13 +216,17 @@ button::before {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
+
 }
+
 ::placeholder {
   color: #fff;
   letter-spacing: 0.07rem;
@@ -238,8 +243,10 @@ button::before {
   --colorbg:#FA4659;
   --colortx:#FA4659;
   --deg: 40deg;
+
   font-size: 75px;
   background: linear-gradient(var(--deg), transparent 50%, var(--colorbg) 50%);
+  
   /* needed for Chrome and Safari */
   /* stylelint-disable property-no-vendor-prefix */
   -webkit-background-clip: text;
