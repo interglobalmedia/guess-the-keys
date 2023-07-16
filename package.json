@@ -4,8 +4,9 @@
   "description": "## A fun little game made with JavaScript, SCSS/CSS3, and HTML.",
   "main": "keypress.js",
   "scripts": {
-    "lint": "eslint .",
-    "stylelint": "stylelint **/*.scss",
+    "lint": "eslint --quiet --fix --ext .mjs",
+    "stylelint1": "stylelint **/*.scss",
+    "stylelint": "stylelint **/*.css",
     "stylelint:fix": "stylelint --fix **/*.scss",
     "eslint:fix": "eslint . --fix",
     "eslint-check": "eslint --print-config . | eslint-config-prettier-check",
