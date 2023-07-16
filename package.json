@@ -4,8 +4,9 @@
   "description": "## A fun little game made with JavaScript, SCSS/CSS3, and HTML.",
   "main": "keypress.js",
   "scripts": {
-    "lint": "eslint .",
-    "stylelint": "stylelint **/*.scss",
+    "lint": "eslint --quiet --fix --ext .mjs",
+    "stylelint1": "stylelint **/*.scss",
+    "stylelint": "stylelint **/*.css",
     "stylelint:fix": "stylelint --fix **/*.scss",
     "eslint:fix": "eslint . --fix",
     "eslint-check": "eslint --print-config . | eslint-config-prettier-check",
@@ -16,7 +17,11 @@
     "clean": "rm -rf dist/",
     "serve": "webpack-dev-server --mode development --config config/webpack.base.config.js --open --hot --history-api-fallback --node-env development --node-env stag",
     "predeploy": "webpack --mode production --config config/webpack.prod.config.js --env PLATFORM=production --env VERSION=stag --progress",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "compile-sass": "npx sass --watch styles/scss/styles.scss styles/css/styles.css",
+    "clean": "rm -rf docs && mkdir docs",
+    "build": "cp -R modules docs/ && cp -R styles docs/ && cp favicon.ico index.html index.mjs docs/",
+    "delete-scss": "rm -rf docs/styles/scss"
   },
   "repository": {
     "type": "git",
@@ -29,51 +34,22 @@
   },
   "homepage": "https://github.com/interglobalmedia/guess-the-keys#readme",
   "devDependencies": {
-    "@babel/core": "^7.16.7",
-    "@babel/eslint-parser": "^7.16.5",
-    "@babel/plugin-proposal-export-default-from": "^7.16.7",
-    "@babel/plugin-proposal-export-namespace-from": "^7.16.7",
-    "@babel/plugin-proposal-object-rest-spread": "^7.16.7",
-    "@babel/plugin-proposal-throw-expressions": "^7.16.7",
-    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@babel/plugin-transform-modules-commonjs": "^7.16.8",
-    "@babel/plugin-transform-object-assign": "^7.16.7",
-    "@babel/preset-env": "^7.16.8",
-    "babel-loader": "^8.2.3",
-    "clean-webpack-plugin": "^4.0.0",
-    "copy-webpack-plugin": "^10.2.0",
-    "css-loader": "^6.5.1",
     "eslint": "^8.7.0",
     "eslint-cli": "^1.1.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-webpack-plugin": "^3.1.1",
-    "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^5.5.0",
     "htmlhint": "^0.15.1",
     "husky": "^7.0.4",
-    "mini-css-extract-plugin": "^2.5.1",
-    "optimize-css-assets-webpack-plugin": "^6.0.1",
     "prettier": "^2.5.1",
-    "sass-loader": "^12.4.0",
-    "style-loader": "^3.3.1",
     "stylelint": "^14.3.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-prettier-scss": "^0.0.1",
     "stylelint-config-standard": "^24.0.0",
-    "stylelint-config-standard-scss": "^3.0.0",
-    "uglifyjs-webpack-plugin": "^2.2.0",
-    "url-loader": "^4.1.1",
-    "webpack": "^5.76.3",
-    "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.13.1",
-    "webpack-manifest-plugin": "^4.1.1",
-    "webpack-merge": "^5.8.0"
+    "stylelint-config-standard-scss": "^3.0.0"
   },
   "dependencies": {
     "gh-pages": "^3.2.3",
-    "sass": "^1.60.0",
-    "webpack-visualizer-plugin2": "^1.0.0"
+    "sass": "^1.60.0"
   }
 }

@@ -1,7 +1,7 @@
-import pickColor from './pickColor';
-import getRandomColor from './getRandomColor';
-import range from './range';
-import getChar from './getChar';
+import pickColor from './pickColor.mjs';
+import getRandomColor from './getRandomColor.mjs';
+import range from './range.mjs';
+import getChar from './getChar.mjs';
 
 /* background related code */
 

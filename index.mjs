@@ -1,10 +1,9 @@
 /* set styles for the chordPad div containing keypress result related messages */
-import './styles/scss/styles.scss';
-import initStyles from './modules/initStyles';
-import chordPadStyles from './modules/chordPadStyles';
-import Div from './modules/Div';
-import getRandomColor from './modules/getRandomColor';
-import createCharDivs from './modules/createCharDivs';
+import initStyles from './modules/initStyles.mjs';
+import chordPadStyles from './modules/chordPadStyles.mjs';
+import Div from './modules/Div.mjs';
+import getRandomColor from './modules/getRandomColor.mjs';
+import createCharDivs from './modules/createCharDivs.mjs';
 
 const chordPad = document.querySelector('#keyboard');
 const key = document.querySelector('.key');

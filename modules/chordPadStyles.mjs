@@ -1,4 +1,4 @@
-import getRandomColor from './getRandomColor';
+import getRandomColor from './getRandomColor.mjs';
 
 /* set styles for the chordPad div containing keypress result related messages */
 function chordPadStyles() {
