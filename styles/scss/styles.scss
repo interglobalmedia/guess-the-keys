@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@use 'base/variables';
+@use 'base/global';
+@use 'partials/keypress';
+@use 'partials/background';
 
-@import 'base/variables';
-@import 'base/global';
-@import 'partials/keypress';
-@import 'partials/background';
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');

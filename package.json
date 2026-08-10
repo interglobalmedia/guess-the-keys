@@ -1,8 +1,7 @@
 {
   "name": "guess-the-keys",
   "version": "1.0.0",
-  "description": "## A fun little game made with JavaScript, SCSS/CSS3, and HTML.",
-  "main": "keypress.js",
+  "description": "A fun little game made with JavaScript, SCSS/CSS3, and HTML.",
   "scripts": {
     "lint": "eslint --quiet --fix --ext .mjs",
     "stylelint1": "stylelint **/*.scss",
@@ -14,13 +13,9 @@
     "prepare": "husky install",
     "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
     "validate": "npm run lint && npm run stylelint && npm run prettier",
-    "clean": "rm -rf docs && mkdir docs",
-    "serve": "webpack-dev-server --mode development --config config/webpack.base.config.js --open --hot --history-api-fallback --node-env development --node-env stag",
-    "predeploy": "webpack --mode production --config config/webpack.prod.config.js --env PLATFORM=production --env VERSION=stag --progress",
-    "deploy": "gh-pages -d dist",
-    "compile-sass": "npx sass --watch styles/scss/styles.scss styles/css/styles.css",
-    "build": "cp -R modules docs/ && cp -R styles docs/ && cp favicon.ico index.html index.mjs docs/",
-    "delete-scss": "rm -rf docs/styles/scss"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -31,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/interglobalmedia/guess-the-keys/issues"
   },
-  "homepage": "https://github.com/interglobalmedia/guess-the-keys#readme",
+  "homepage": "https://interglobalmedia.github.io/guess-the-keys/",
   "devDependencies": {
     "eslint": "^8.7.0",
     "eslint-cli": "^1.1.1",
@@ -45,7 +40,8 @@
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-prettier-scss": "^0.0.1",
     "stylelint-config-standard": "^24.0.0",
-    "stylelint-config-standard-scss": "^3.0.0"
+    "stylelint-config-standard-scss": "^3.0.0",
+    "vite": "^8.2.1"
   },
   "dependencies": {
     "sass": "^1.60.0"
