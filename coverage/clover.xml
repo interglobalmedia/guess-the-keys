@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1786470297777" clover="3.2.0">
+  <project timestamp="1786470297777" name="All files">
+    <metrics statements="42" coveredstatements="42" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="8" elements="50" coveredelements="50" complexity="0" loc="42" ncloc="42" packages="1" files="8" classes="8"/>
+    <file name="Div.mjs" path="/Users/mariacam/Development/guess-the-keys/modules/Div.mjs">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="11" count="813" type="stmt"/>
+      <line num="12" count="813" type="stmt"/>
+      <line num="13" count="813" type="stmt"/>
+      <line num="14" count="813" type="stmt"/>
+      <line num="15" count="813" type="stmt"/>
+      <line num="16" count="813" type="stmt"/>
+      <line num="17" count="813" type="stmt"/>
+    </file>
+    <file name="chordPadStyles.mjs" path="/Users/mariacam/Development/guess-the-keys/modules/chordPadStyles.mjs">
+      <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="9" count="2" type="stmt"/>
+      <line num="10" count="2" type="stmt"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="12" count="2" type="stmt"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="14" count="2" type="stmt"/>
+      <line num="15" count="2" type="stmt"/>
+    </file>
+    <file name="createCharDivs.mjs" path="/Users/mariacam/Development/guess-the-keys/modules/createCharDivs.mjs">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="511" type="stmt"/>
+      <line num="11" count="511" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+    </file>
+    <file name="getChar.mjs" path="/Users/mariacam/Development/guess-the-keys/modules/getChar.mjs">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="8" count="914" type="stmt"/>
+    </file>
+    <file name="getRandomColor.mjs" path="/Users/mariacam/Development/guess-the-keys/modules/getRandomColor.mjs">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="3" count="820" type="stmt"/>
+      <line num="4" count="820" type="stmt"/>
+      <line num="5" count="820" type="stmt"/>
+      <line num="6" count="4920" type="stmt"/>
+      <line num="8" count="820" type="stmt"/>
+    </file>
+    <file name="initStyles.mjs" path="/Users/mariacam/Development/guess-the-keys/modules/initStyles.mjs">
+      <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="4" count="2" type="stmt"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="9" count="2" type="stmt"/>
+      <line num="10" count="2" type="stmt"/>
+      <line num="12" count="2" type="stmt"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="14" count="2" type="stmt"/>
+      <line num="16" count="2" type="stmt"/>
+    </file>
+    <file name="pickColor.mjs" path="/Users/mariacam/Development/guess-the-keys/modules/pickColor.mjs">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="7" count="913" type="stmt"/>
+    </file>
+    <file name="range.mjs" path="/Users/mariacam/Development/guess-the-keys/modules/range.mjs">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="4" count="2742" type="stmt"/>
+    </file>
+  </project>
+</coverage>
