@@ -4,8 +4,7 @@
 	"description": "A fun little game made with JavaScript, SCSS/CSS3, and HTML.",
 	"scripts": {
 		"lint": "eslint --quiet --fix --ext .mjs",
-		"stylelint1": "stylelint **/*.scss",
-		"stylelint": "stylelint **/*.css",
+		"stylelint": "stylelint \"**/*.css\"",
 		"stylelint:fix": "stylelint --fix **/*.scss",
 		"eslint:fix": "eslint . --fix",
 		"eslint-check": "eslint --print-config . | eslint-config-prettier-check",
@@ -17,7 +16,8 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"test": "vitest",
-		"test:run": "vitest run"
+		"test:run": "vitest run",
+		"coverage": "vitest run --coverage"
 	},
 	"repository": {
 		"type": "git",
@@ -30,6 +30,7 @@
 	},
 	"homepage": "https://interglobalmedia.github.io/guess-the-keys/",
 	"devDependencies": {
+		"@vitest/coverage-istanbul": "^4.1.10",
 		"eslint": "^8.7.0",
 		"eslint-cli": "^1.1.1",
 		"eslint-config-prettier": "^8.3.0",

@@ -1,0 +1,385 @@
+{
+	"/Users/mariacam/Development/guess-the-keys/modules/Div.mjs": {
+		"path": "/Users/mariacam/Development/guess-the-keys/modules/Div.mjs",
+		"statementMap": {
+			"0": {
+				"start": { "line": 11, "column": 8 },
+				"end": { "line": 11, "column": null }
+			},
+			"1": {
+				"start": { "line": 12, "column": 8 },
+				"end": { "line": 12, "column": null }
+			},
+			"2": {
+				"start": { "line": 13, "column": 8 },
+				"end": { "line": 13, "column": null }
+			},
+			"3": {
+				"start": { "line": 14, "column": 8 },
+				"end": { "line": 14, "column": null }
+			},
+			"4": {
+				"start": { "line": 15, "column": 20 },
+				"end": { "line": 15, "column": 47 }
+			},
+			"5": {
+				"start": { "line": 16, "column": 8 },
+				"end": { "line": 16, "column": null }
+			},
+			"6": {
+				"start": { "line": 17, "column": 8 },
+				"end": { "line": 17, "column": null }
+			}
+		},
+		"fnMap": {
+			"0": {
+				"name": "(anonymous_0)",
+				"decl": {
+					"start": { "line": 10, "column": 4 },
+					"end": { "line": 10, "column": 15 }
+				},
+				"loc": {
+					"start": { "line": 10, "column": 18 },
+					"end": { "line": 18, "column": null }
+				}
+			}
+		},
+		"branchMap": {},
+		"s": {
+			"0": 813,
+			"1": 813,
+			"2": 813,
+			"3": 813,
+			"4": 813,
+			"5": 813,
+			"6": 813
+		},
+		"f": { "0": 813 },
+		"b": {}
+	},
+	"/Users/mariacam/Development/guess-the-keys/modules/chordPadStyles.mjs": {
+		"path": "/Users/mariacam/Development/guess-the-keys/modules/chordPadStyles.mjs",
+		"statementMap": {
+			"0": {
+				"start": { "line": 5, "column": 21 },
+				"end": { "line": 5, "column": 56 }
+			},
+			"1": {
+				"start": { "line": 7, "column": 4 },
+				"end": { "line": 7, "column": null }
+			},
+			"2": {
+				"start": { "line": 8, "column": 4 },
+				"end": { "line": 8, "column": null }
+			},
+			"3": {
+				"start": { "line": 9, "column": 4 },
+				"end": { "line": 9, "column": null }
+			},
+			"4": {
+				"start": { "line": 10, "column": 4 },
+				"end": { "line": 10, "column": null }
+			},
+			"5": {
+				"start": { "line": 11, "column": 4 },
+				"end": { "line": 11, "column": null }
+			},
+			"6": {
+				"start": { "line": 12, "column": 4 },
+				"end": { "line": 12, "column": null }
+			},
+			"7": {
+				"start": { "line": 13, "column": 4 },
+				"end": { "line": 13, "column": null }
+			},
+			"8": {
+				"start": { "line": 14, "column": 4 },
+				"end": { "line": 14, "column": null }
+			},
+			"9": {
+				"start": { "line": 15, "column": 4 },
+				"end": { "line": 15, "column": null }
+			}
+		},
+		"fnMap": {
+			"0": {
+				"name": "chordPadStyles",
+				"decl": {
+					"start": { "line": 4, "column": 9 },
+					"end": { "line": 4, "column": 23 }
+				},
+				"loc": {
+					"start": { "line": 4, "column": 26 },
+					"end": { "line": 16, "column": null }
+				}
+			}
+		},
+		"branchMap": {},
+		"s": {
+			"0": 2,
+			"1": 2,
+			"2": 2,
+			"3": 2,
+			"4": 2,
+			"5": 2,
+			"6": 2,
+			"7": 2,
+			"8": 2,
+			"9": 2
+		},
+		"f": { "0": 2 },
+		"b": {}
+	},
+	"/Users/mariacam/Development/guess-the-keys/modules/createCharDivs.mjs": {
+		"path": "/Users/mariacam/Development/guess-the-keys/modules/createCharDivs.mjs",
+		"statementMap": {
+			"0": {
+				"start": { "line": 7, "column": 15 },
+				"end": { "line": 7, "column": 48 }
+			},
+			"1": {
+				"start": { "line": 8, "column": 17 },
+				"end": { "line": 8, "column": 47 }
+			},
+			"2": {
+				"start": { "line": 9, "column": 4 },
+				"end": { "line": 12, "column": null }
+			},
+			"3": {
+				"start": { "line": 9, "column": 17 },
+				"end": { "line": 9, "column": 18 }
+			},
+			"4": {
+				"start": { "line": 10, "column": 18 },
+				"end": { "line": 10, "column": 27 }
+			},
+			"5": {
+				"start": { "line": 11, "column": 8 },
+				"end": { "line": 11, "column": null }
+			},
+			"6": {
+				"start": { "line": 13, "column": 4 },
+				"end": { "line": 13, "column": null }
+			}
+		},
+		"fnMap": {
+			"0": {
+				"name": "createCharDivs",
+				"decl": {
+					"start": { "line": 6, "column": 9 },
+					"end": { "line": 6, "column": 23 }
+				},
+				"loc": {
+					"start": { "line": 6, "column": 26 },
+					"end": { "line": 14, "column": null }
+				}
+			}
+		},
+		"branchMap": {},
+		"s": { "0": 1, "1": 1, "2": 1, "3": 1, "4": 511, "5": 511, "6": 1 },
+		"f": { "0": 1 },
+		"b": {}
+	},
+	"/Users/mariacam/Development/guess-the-keys/modules/getChar.mjs": {
+		"path": "/Users/mariacam/Development/guess-the-keys/modules/getChar.mjs",
+		"statementMap": {
+			"0": {
+				"start": { "line": 8, "column": 4 },
+				"end": { "line": 8, "column": null }
+			}
+		},
+		"fnMap": {
+			"0": {
+				"name": "getChar",
+				"decl": {
+					"start": { "line": 6, "column": 9 },
+					"end": { "line": 6, "column": 16 }
+				},
+				"loc": {
+					"start": { "line": 6, "column": 19 },
+					"end": { "line": 9, "column": null }
+				}
+			}
+		},
+		"branchMap": {},
+		"s": { "0": 914 },
+		"f": { "0": 914 },
+		"b": {}
+	},
+	"/Users/mariacam/Development/guess-the-keys/modules/getRandomColor.mjs": {
+		"path": "/Users/mariacam/Development/guess-the-keys/modules/getRandomColor.mjs",
+		"statementMap": {
+			"0": {
+				"start": { "line": 3, "column": 18 },
+				"end": { "line": 3, "column": 46 }
+			},
+			"1": {
+				"start": { "line": 4, "column": 16 },
+				"end": { "line": 4, "column": 19 }
+			},
+			"2": {
+				"start": { "line": 5, "column": 4 },
+				"end": { "line": 7, "column": null }
+			},
+			"3": {
+				"start": { "line": 5, "column": 17 },
+				"end": { "line": 5, "column": 18 }
+			},
+			"4": {
+				"start": { "line": 6, "column": 8 },
+				"end": { "line": 6, "column": null }
+			},
+			"5": {
+				"start": { "line": 8, "column": 4 },
+				"end": { "line": 8, "column": null }
+			}
+		},
+		"fnMap": {
+			"0": {
+				"name": "getRandomColor",
+				"decl": {
+					"start": { "line": 2, "column": 9 },
+					"end": { "line": 2, "column": 23 }
+				},
+				"loc": {
+					"start": { "line": 2, "column": 26 },
+					"end": { "line": 9, "column": null }
+				}
+			}
+		},
+		"branchMap": {},
+		"s": { "0": 820, "1": 820, "2": 820, "3": 820, "4": 4920, "5": 820 },
+		"f": { "0": 820 },
+		"b": {}
+	},
+	"/Users/mariacam/Development/guess-the-keys/modules/initStyles.mjs": {
+		"path": "/Users/mariacam/Development/guess-the-keys/modules/initStyles.mjs",
+		"statementMap": {
+			"0": {
+				"start": { "line": 3, "column": 17 },
+				"end": { "line": 3, "column": 47 }
+			},
+			"1": {
+				"start": { "line": 4, "column": 21 },
+				"end": { "line": 4, "column": 49 }
+			},
+			"2": {
+				"start": { "line": 5, "column": 21 },
+				"end": { "line": 5, "column": 54 }
+			},
+			"3": {
+				"start": { "line": 7, "column": 4 },
+				"end": { "line": 7, "column": null }
+			},
+			"4": {
+				"start": { "line": 8, "column": 4 },
+				"end": { "line": 8, "column": null }
+			},
+			"5": {
+				"start": { "line": 9, "column": 4 },
+				"end": { "line": 9, "column": null }
+			},
+			"6": {
+				"start": { "line": 10, "column": 4 },
+				"end": { "line": 10, "column": null }
+			},
+			"7": {
+				"start": { "line": 12, "column": 4 },
+				"end": { "line": 12, "column": null }
+			},
+			"8": {
+				"start": { "line": 13, "column": 4 },
+				"end": { "line": 13, "column": null }
+			},
+			"9": {
+				"start": { "line": 14, "column": 4 },
+				"end": { "line": 14, "column": null }
+			},
+			"10": {
+				"start": { "line": 16, "column": 4 },
+				"end": { "line": 16, "column": null }
+			}
+		},
+		"fnMap": {
+			"0": {
+				"name": "initStyles",
+				"decl": {
+					"start": { "line": 2, "column": 9 },
+					"end": { "line": 2, "column": 19 }
+				},
+				"loc": {
+					"start": { "line": 2, "column": 22 },
+					"end": { "line": 17, "column": null }
+				}
+			}
+		},
+		"branchMap": {},
+		"s": {
+			"0": 2,
+			"1": 2,
+			"2": 2,
+			"3": 2,
+			"4": 2,
+			"5": 2,
+			"6": 2,
+			"7": 2,
+			"8": 2,
+			"9": 2,
+			"10": 2
+		},
+		"f": { "0": 2 },
+		"b": {}
+	},
+	"/Users/mariacam/Development/guess-the-keys/modules/pickColor.mjs": {
+		"path": "/Users/mariacam/Development/guess-the-keys/modules/pickColor.mjs",
+		"statementMap": {
+			"0": {
+				"start": { "line": 7, "column": 4 },
+				"end": { "line": 7, "column": null }
+			}
+		},
+		"fnMap": {
+			"0": {
+				"name": "pickColor",
+				"decl": {
+					"start": { "line": 6, "column": 9 },
+					"end": { "line": 6, "column": 18 }
+				},
+				"loc": {
+					"start": { "line": 6, "column": 21 },
+					"end": { "line": 8, "column": null }
+				}
+			}
+		},
+		"branchMap": {},
+		"s": { "0": 913 },
+		"f": { "0": 913 },
+		"b": {}
+	},
+	"/Users/mariacam/Development/guess-the-keys/modules/range.mjs": {
+		"path": "/Users/mariacam/Development/guess-the-keys/modules/range.mjs",
+		"statementMap": {
+			"0": {
+				"start": { "line": 4, "column": 4 },
+				"end": { "line": 4, "column": null }
+			}
+		},
+		"fnMap": {
+			"0": {
+				"name": "range",
+				"decl": {
+					"start": { "line": 3, "column": 9 },
+					"end": { "line": 3, "column": 14 }
+				},
+				"loc": {
+					"start": { "line": 3, "column": 25 },
+					"end": { "line": 5, "column": null }
+				}
+			}
+		},
+		"branchMap": {},
+		"s": { "0": 2742 },
+		"f": { "0": 2742 },
+		"b": {}
+	}
+}
