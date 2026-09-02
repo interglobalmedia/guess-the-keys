@@ -24,6 +24,7 @@
 		margin: 20px auto;
 		text-align: center;
 	}
+
 	@media #{v.$max-800} {
 		display: block;
 		width: 90%;
@@ -74,6 +75,7 @@ input {
 	outline: none;
 	border: none;
 	padding-left: 1rem;
+
 	@media #{v.$min-412} {
 		border: none;
 		border-radius: 36px;
@@ -95,6 +97,7 @@ input {
 
 button {
 	display: none;
+
 	@media #{v.$min-412} {
 		background: v.$btn-bg-color;
 		border: none;
@@ -111,6 +114,7 @@ button {
 
 button::after {
 	display: none;
+
 	@media #{v.$min-412} {
 		background: v.$btn-bg-after-color;
 		border-radius: 50%;
@@ -128,6 +132,7 @@ button::after {
 
 button::before {
 	display: none;
+
 	@media #{v.$min-412} {
 		background: v.$btn-bg-before-color;
 		border-radius: 50%;
@@ -149,6 +154,7 @@ button::before {
 
 .active button {
 	display: none;
+
 	@media #{v.$min-412} {
 		display: block;
 		margin-left: -1rem;
@@ -158,6 +164,7 @@ button::before {
 
 .active button::before {
 	display: none;
+
 	@media #{v.$min-412} {
 		display: block;
 		transform: scale(1);
