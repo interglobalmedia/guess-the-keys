@@ -110,16 +110,16 @@ npm test -- --reporter=verbose
 
 ## Project structure
 
-If you ran `tree -a -I 'node_modules|.git|dist|coverage|git-commit-messages.md|JS_DOM_Manipulation.txt|notes.md|output.txt|.DS_Store'` from the command line, filtering out the same noise this diagram excludes but without --dirsfirst, files and folders would be listed together, alphabetically, rather than folders-first:
+If you run `tree -a -I 'node_modules|.git|dist|coverage|git-commit-messages.md|JS_DOM_Manipulation.txt|notes.md|output.txt|.DS_Store'` from the command line, filtering out the same noise this diagram excludes but without `--dirsfirst`, it results in the following, with files and folders listed together alphabetically rather than folders-first:
 
 ```
 .
 ├── .github
-│   └── workflows
-│       └── deploy.yml
+│   └── workflows
+│       └── deploy.yml
 ├── .gitignore
 ├── .husky
-│   └── pre-commit
+│   └── pre-commit
 ├── .prettierignore
 ├── .prettierrc.json
 ├── .stylelintignore
@@ -128,37 +128,39 @@ If you ran `tree -a -I 'node_modules|.git|dist|coverage|git-commit-messages.md|J
 ├── index.html
 ├── index.mjs
 ├── modules
-│   ├── chordPadStyles.mjs
-│   ├── chordPadStyles.test.mjs
-│   ├── createCharDivs.mjs
-│   ├── createCharDivs.test.mjs
-│   ├── Div.mjs
-│   ├── Div.test.mjs
-│   ├── getChar.mjs
-│   ├── getChar.test.mjs
-│   ├── getRandomColor.mjs
-│   ├── getRandomColor.test.mjs
-│   ├── initStyles.mjs
-│   ├── initStyles.test.mjs
-│   ├── pickColor.mjs
-│   ├── pickColor.test.mjs
-│   ├── range.mjs
-│   └── range.test.mjs
+│   ├── chordPadStyles.mjs
+│   ├── chordPadStyles.test.mjs
+│   ├── createCharDivs.mjs
+│   ├── createCharDivs.test.mjs
+│   ├── Div.mjs
+│   ├── Div.test.mjs
+│   ├── getChar.mjs
+│   ├── getChar.test.mjs
+│   ├── getRandomColor.mjs
+│   ├── getRandomColor.test.mjs
+│   ├── initStyles.mjs
+│   ├── initStyles.test.mjs
+│   ├── pickColor.mjs
+│   ├── pickColor.test.mjs
+│   ├── range.mjs
+│   └── range.test.mjs
 ├── package-lock.json
 ├── package.json
 ├── public
-│   └── favicon.ico
+│   └── favicon.ico
 ├── README.md
 ├── styles
-│   └── scss
-│       ├── base
-│       │   ├── _global.scss
-│       │   └── _variables.scss
-│       ├── partials
-│       │   ├── _background.scss
-│       │   └── _keypress.scss
-│       └── styles.scss
+│   └── scss
+│       ├── base
+│       │   ├── _global.scss
+│       │   └── _variables.scss
+│       ├── partials
+│       │   ├── _background.scss
+│       │   └── _keypress.scss
+│       └── styles.scss
 └── vite.config.mjs
+
+10 directories, 36 files
 ```
 
 Enjoy the game and let me know what you think!
